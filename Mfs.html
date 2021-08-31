@@ -1,0 +1,494 @@
+
+ <html>
+  <body>
+   <style>
+     body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-size: 100%;
+     }
+     h1{
+       background-color:rgb(59, 15, 88);
+       background-repeat:no-repeat;
+       font-size:50px;
+       font-family:fantasy;
+       background-size:100%;
+       background-blend-mode: saturation;
+       
+     }
+     .navbar {
+       overflow: hidden;
+       background-color: #333;
+       float:right;
+     }
+     
+     .navbar a {
+       float: left;
+       font-size: 16px;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+     }
+     
+     .dropdown {
+       float: left;
+       overflow: hidden;
+     }
+     
+     .dropdown .dropbtn {
+       font-size: 16px;  
+       border: none;
+       outline: none;
+       color: white;
+       padding: 14px 16px;
+       background-color: inherit;
+       font-family: inherit;
+       margin: 0;
+     }
+     
+     .navbar a:hover, .dropdown:hover .dropbtn {
+       background-color: red;
+       
+     }
+     
+     .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #f9f9f9;
+       min-width: 160px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+       opacity: .6;
+     }
+     
+     .dropdown-content a {
+       float: none;
+       color: black;
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
+       text-align: left;
+     }
+     
+     .dropdown-content a:hover {
+       background-color: #ddd;
+       opacity:.8;
+     }
+     
+     .dropdown:hover .dropdown-content {
+       display: block;
+     }
+    /*move fieldset in the same line with the*/
+ 
+ .hospitals-in-india ul {
+       padding: 15px 18px;
+       background: #d4d3d3;
+       height: auto;
+       overflow-y: scroll;
+       border-radius: 3px;
+   }
+ 
+ 
+     /* CARD CSS */
+ .card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   max-width: 320px;
+   margin: auto;
+   text-align: center;
+   -ms-flex-align: center;
+ 
+ }
+ 
+ .title {
+   color: grey;
+   font-size: 18px;
+ }
+ 
+ button {
+   border: none;
+   outline: 0;
+   
+   padding: 8px;
+   color: white;
+   background-color: #000;
+   text-align: center;
+   cursor: pointer;
+ 
+   font-size: 18px;
+ }
+ ol{
+       position:inherit;
+       top:200;
+       left:499;
+       width:340;
+       color:white;
+       margin-bottom: 2px;
+     }
+ 
+     div.card{
+   float:left;
+ 
+   
+ }
+ p{
+   color:black;
+ }
+ button:hover, a:hover {
+   opacity: 0.7;
+ 
+ 
+     </style>
+     
+ 
+     
+     <center><div class="navbar">
+       <a href="home.html">Home</a>
+        <div class="dropdown">
+         <button class="dropbtn">Pharmacy
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="Drugs.html">Drugs</a>
+           <a href="lab.html">Labolitary</a>
+          
+         </div>
+       </div>
+       <div class="dropdown">
+         <button class="dropbtn">Patient 
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="std.html">Statistics of death</a>
+           <a href="stp.html">Statistics of Discharged Patient</a>
+           <a href="stw.html">Statistics of Patients in the wards</a>
+           <a href="appointment form.html">Patients Appointment form</a>
+         </div>
+       </div>
+       <div class="dropdown">
+         <button class="dropbtn">Services offered
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="cancer.html">cancer treatment</a>
+           <a href="liver.html">Liver treatment</a>
+           <a href="brain.html">Brian treatment</a>
+           <a href="labor.html">labor</a>
+         </div>
+       </div>
+       <div class="dropdown">
+         <button class="dropbtn">Dctors 
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="doc.php">Find Doctor</a>
+           <a href="Mfs.html">Members of staff</a>
+           <a href="#">Staff</a>
+         </div>
+       </div>
+       <div class="dropdown">
+         <button class="dropbtn">About us 
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="Location.php">Location</a>
+          
+         </div>
+       </div>
+       <a href="logins.html">Login as Admin</a>
+     </div>  
+   <hr>
+     <br>
+ 
+ <table align="center" bgcolor="grey">
+     <tr width="80px">
+         <td>
+         <table  align="left">
+             <tr width="80px">
+                 <td border="6" bgcolor="#008765">
+         <div class="card">
+         <img src="img/d/d7.jpg" alt="doctor" width="200px" height="150px">
+         <h1>CEO Doc Gracy</h1>
+         <p class="title">Labor Doc</p>
+         <p>doctor</p>
+         <a href="#"><i class="fa fa-dribbble"></i></a>
+         <a href="#"><i class="fa fa-twitter"></i></a>
+         <a href="#"><i class="fa fa-linkedin"></i></a>
+         <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+         <p><a href="appointment form.HTML"><button>Make Appointment</button>></p>    
+         
+         </td>
+         </tr>
+         </table>
+         </td>
+     </tr>
+     </table>
+ 
+     <br><br><br>
+ <!-- cancer doc -->
+ <table align="center"border="3" bgcolor="grey">
+     <tr>
+         <td>
+ 
+ <table  align="right">
+     <tr width="80px">
+         <td border="6" bgcolor="#008765">
+ <div class="card">
+ <img src="img/d/images (11).jpg" alt="doctor" width="200px" height="150px">
+ <h1>Doc Daliso</h1>
+ <p class="title">Cancer Doc</p>
+ <p>doctor</p>
+ <a href="#"><i class="fa fa-dribbble"></i></a>
+ <a href="#"><i class="fa fa-twitter"></i></a>
+ <a href="#"><i class="fa fa-linkedin"></i></a>
+ <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+ <p><a href="appointment form.HTML"><button>Make Appointment</button>></p>  
+ 
+ </td>
+ </tr>
+ </table>
+ &nbsp;&nbsp;&nbsp;&nbsp;
+ <table  align="right">
+     <tr width="80px">
+         <td border="6" bgcolor="#008765">
+ <div class="card">
+ <img src="img/d/images (24).jpg" alt="doctor" width="200px" height="150px">
+ <h1>Doc Daniel</h1>
+ <p class="title">Cancer Doc</p>
+ <p>doctor</p>
+ <a href="#"><i class="fa fa-dribbble"></i></a>
+ <a href="#"><i class="fa fa-twitter"></i></a>
+ <a href="#"><i class="fa fa-linkedin"></i></a>
+ <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+ <p><a href="appointment form.HTML"><button>Make Appointment</button>></p>    
+ 
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+ <br><br><br>
+ <!-- brain doc -->
+ <table align="center"border="3" bgcolor="grey">
+     <tr>
+         <td>
+ 
+ <table  align="right">
+     <tr width="80px">
+         <td border="6" bgcolor="lightblue">
+ <div class="card">
+ <img src="img/d/d1.jpg" alt="doctor" width="200px" height="150px">
+ <h1>Doc favour</h1>
+ <p class="title">Brain Doc</p>
+ <p>doctor</p>
+ <a href="#"><i class="fa fa-dribbble"></i></a>
+ <a href="#"><i class="fa fa-twitter"></i></a>
+ <a href="#"><i class="fa fa-linkedin"></i></a>
+ <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+ <p><a href="appointment form.HTML"><button>Make Appointment</button>></p>    
+ 
+ </td>
+ </tr>
+ </table>
+ &nbsp;&nbsp;&nbsp;&nbsp;
+ <table  align="right">
+     <tr width="80px">
+         <td border="6" bgcolor="lightblue">
+ <div class="card">
+ <img src="img/d/d2.jpg" alt="doctor" width="200px" height="150px">
+ <h1>Doc Daliso</h1>
+ <p class="title">Brain Doc</p>
+ <p>doctor</p>
+ <a href="#"><i class="fa fa-dribbble"></i></a>
+ <a href="#"><i class="fa fa-twitter"></i></a>
+ <a href="#"><i class="fa fa-linkedin"></i></a>
+ <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+ <p><a href="appointment form.HTML"><button>Make Appointment</button>></p>    
+ 
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+ <br><br><br>
+ <!-- labor doc -->
+ <table align="center" bgcolor="grey">
+     <tr width="80px">
+         <td border="6" bgcolor="#008765">
+ 
+         
+ <table  align="right">
+     <tr width="80px">
+         <td border="6" bgcolor="#008765">
+ <div class="card">
+ <img src="img/d/images (13).jpg" alt="doctor" width="200px" height="150px">
+ <h1>Doc Mather</h1>
+ <p class="title">Labor Doc</p>
+ <p>doctor</p>
+ <a href="#"><i class="fa fa-dribbble"></i></a>
+ <a href="#"><i class="fa fa-twitter"></i></a>
+ <a href="#"><i class="fa fa-linkedin"></i></a>
+ <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+ <p><a href="appointment form.HTML"><button>Make Appointment</button>></p>    
+ 
+ </td>
+ </tr>
+ </table>
+ <table  align="right">
+     <tr width="80px">
+         <td border="6" bgcolor="#008765">
+ <div class="card">
+ <img src="img/d/images (14).jpg" alt="doctor" width="200px" height="150px">
+ <h1>Luoma</h1>
+ <p class="title">Labor Doc</p>
+ <p>Doc Esther</p>
+ <a href="#"><i class="fa fa-dribbble"></i></a>
+ <a href="#"><i class="fa fa-twitter"></i></a>
+ <a href="#"><i class="fa fa-linkedin"></i></a>
+ <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+ <p><a href="appointment form.HTML"><button>Make Appointment</button>></p>   
+ 
+ </td>
+ </tr>
+ </table><table  align="right">
+     <tr width="80px">
+         <td border="6" bgcolor="#008765">
+ <div class="card">
+ <img src="img/d/images (15).jpg" alt="doctor" width="200px" height="150px">
+ <h1>Luoma</h1>
+ <p class="title">Labor Doc</p>
+ <p>Doc Annie</p>
+ <a href="#"><i class="fa fa-dribbble"></i></a>
+ <a href="#"><i class="fa fa-twitter"></i></a>
+ <a href="#"><i class="fa fa-linkedin"></i></a>
+ <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+  <p><a href="appointment form.HTML"><button>Make Appointment</button>></p>   
+ 
+ </td>
+ </tr>
+ </table>
+ <table valign="top" align="right">
+ <tr width="80px">
+ <td border="6" bgcolor="#008765">
+ <div class="card">
+ <img src="img/d/images (16).jpg"alt="doctor" width="200px" height="150px">
+ <h1>Doc John</h1>
+ <p class="title">Labor Doc</p>
+ <p>doctor</p>
+ <a href="#"><i class="fa fa-dribbble"></i></a>
+ <a href="#"><i class="fa fa-twitter"></i></a>
+ <a href="#"><i class="fa fa-linkedin"></i></a>
+ <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+  <p><a href="appointment form.HTML"><button>Make Appointment</button>></p>  
+ 
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+ <br><br><br>
+ <!-- liver doc -->
+ <table align="center" bgcolor="grey" >
+     <tr width="80px">
+         <td>
+             <table align="left">
+                 <tr width="80px">
+                     <td border="6" bgcolor="#006765">
+     <div class="card">
+         <img src="img/d/images (10).jpg"alt="doctor" width="200px" height="150px">
+         <h1>Doc Joe</h1>
+         <p class="title">Liver Doc</p>
+         <p>doctor</p>
+         <a href="#"><i class="fa fa-dribbble"></i></a>
+         <a href="#"><i class="fa fa-twitter"></i></a>
+         <a href="#"><i class="fa fa-linkedin"></i></a>
+         <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+         <p><a href="appointment form.HTML"><button>Make Appointment</button></p>    
+     
+     </td>
+     </tr>
+     </table>
+     
+     <table valign="top" align="right">
+         <tr width="80px">
+             <td border="6" bgcolor="#006765">
+         <div class="card">
+             <img src="img/d/images (3).jpg"alt="doctor" width="200px" height="150px">
+             <h1>Doc Mathew</h1>
+             <p class="title">Liver Doc</p>
+             <p>doctor</p>
+             <a href="#"><i class="fa fa-dribbble"></i></a>
+             <a href="#"><i class="fa fa-twitter"></i></a>
+             <a href="#"><i class="fa fa-linkedin"></i></a>
+             <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+             <p><a href="appointment form.HTML"><button>Make Appointment</button></p>  
+     
+         </td>
+     </tr>
+     </table>
+     <table align="right">
+         <tr width="80px">
+             <td border="6" bgcolor="#006765">
+     <div class="card">
+     <img src="img/d/images (8).jpg"alt="doctor" width="200px" height="150px">
+     <h1>Kim</h1>
+     <p class="title">Liver Doc</p>
+     <p>doctor</p>
+     <a href="#"><i class="fa fa-dribbble"></i></a>
+     <a href="#"><i class="fa fa-twitter"></i></a>
+     <a href="#"><i class="fa fa-linkedin"></i></a>
+     <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+     <p><a href="appointment form.HTML"><button>Make Appointment</button></p>  
+     
+     </td>
+     </tr>
+     </table>
+     
+     <table  align="right">
+     <tr width="80px">
+     <td border="6" bgcolor="#006765">
+     <div class="card">
+     <img src="img/d/images (7).jpg"alt="doctor" width="200px" height="150px">
+     <h1>Ruth</h1>
+     <p class="title">Liver Doc</p>
+     <p>doctor</p>
+     <a href="#"><i class="fa fa-dribbble"></i></a>
+     <a href="#"><i class="fa fa-twitter"></i></a>
+     <a href="#"><i class="fa fa-linkedin"></i></a>
+     <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+     <p><a href="appointment form.HTML"><button>Make Appointment</button></p>  
+     
+     </td>
+     </tr>
+     </table>
+     <table align="left">
+         <tr width="80px">
+             <td border="6" bgcolor="#006765">
+     <div class="card">
+     <img src="img/d/images (6).jpg"alt="doctor" width="200px" height="150px">
+     <h1>Katala</h1>
+     <p class="title">Liver Doc</p>
+     <p>doctor</p>
+     <a href="#"><i class="fa fa-dribbble"></i></a>
+     <a href="#"><i class="fa fa-twitter"></i></a>
+     <a href="#"><i class="fa fa-linkedin"></i></a>
+     <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+     <p><a href="appointment form.HTML"><button>Make Appointment</button></p>  
+     
+     </td>
+     </tr>
+     </table>
+     
+     </td>
+     </tr>
+     </table>
+     <center><table width="95%"cellspacing="0"cellpadding="0"border="1">
+         <tr><td valign="top"align="center">
+         Copyright &copy;2020 Luoma Benard Katala Cheng Arifa Amulamu <br>
+         <center>Mbala General Hospital  <?print (date("F d,Y"));?></center>
+         </td></tr>
+         </table>
+         </center>
+         </html>

@@ -1,0 +1,920 @@
+<html>
+ 
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      float:right;
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+      top:1;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+      
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      opacity: .6;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      opacity:.8;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <center><div class="navbar">
+      <a href="home.html">Home</a>
+       <div class="dropdown">
+        <button class="dropbtn">Pharmacy
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Drugs.html">Drugs</a>
+          <a href="lab.html">Labolitary</a>
+         
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Paitent 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="std.html">Statistics of death</a>
+          <a href="stp.html">Statistics of Discharged Paitent</a>
+          <a href="stw.html">Statistics of Paitents in the wards</a>
+          <a href="appointment form.html">Paitents Appointment form</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Services offered
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="cancer.html">cancer treatment</a>
+          <a href="liver.html">Liver treatment</a>
+          <a href="brain.html">Brian treatment</a>
+          <a href="labor.html">labor</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Doctors 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="doc.php">Find Doctor</a>
+          <a href="Mfs.html">Members of staff</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">About us 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Location.php">Location</a>
+         
+        </div>
+      </div>
+      <a href="logins.html">Login as Admin</a>
+    </div>  
+    <br>
+    <br><br>
+      <hr>
+
+      <table width="90%" align="center">
+        <tr>
+            <h1>2015 discharged Patient Record </h1>
+            <p>
+                The number of undetermined cases among the brought-in-dead child cases and the concordance rate of CoDs
+                among the cases with determined CoDs by both of Death Notification Form and SmartVA in the Mbala general Hospital
+            </p>
+        <tr>
+            <th></th>
+            <th>Month</th>
+
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+        </tr>
+        <tr>Rank	Cause of Death	No.	%	Rank	Cause of Death	No.	%
+            <th></th>
+            <th bgcolor="#00FF00" scope="col"> HIV/AIDS</th>
+            <td bgcolor="#C0C0C0">(50.3)<br> 29.0</td>
+            <td bgcolor="#C0C0C0">(34.2)<br> 30.0</td>
+            <td bgcolor="#C0C0C0">(45.0)<br> 28.0</td>
+            <td bgcolor="#C0C0C0">(65.4)<br> 30.1</td>
+            <td bgcolor="#C0C0C0">(84.2)<br> 27.4</td>
+            <td bgcolor="#C0C0C0">(72.3)<br> 28.5</td>
+            <td bgcolor="#C0C0C0">(83.3)<br> 32.1</td>
+            <td bgcolor="#C0C0C0">(89.8)<br> 31.5</td>
+            <td bgcolor="#C0C0C0">(99.7)<br> 37.0</td>
+            <td bgcolor="#C0C0C0">(98.6)<br> 32.0</td>
+            <td bgcolor="#C0C0C0">(12.6)<br> 29.0</td>
+            <td bgcolor="#C0C0C0">(65.2)<br> 87.0</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">Stroke</th>
+            <td bgcolor="#D2691E">(76.9)<br> 323.7</td>
+            <td bgcolor="#D2691E">(45.7)<br> 87.5</td>
+            <td bgcolor="#D2691E">(87.1)<br> 23.8</td>
+            <td bgcolor="#D2691E">(34.6)<br> 28.8</td>
+            <td bgcolor="#D2691E">(98.6)<br> 29.3</td>
+            <td bgcolor="#D2691E">(45.7)<br> 24.2</td>
+            <td bgcolor="#D2691E">(75.6)<br> 23.7</td>
+            <td bgcolor="#D2691E">(78.3)<br> 21.4</td>
+            <td bgcolor="#D2691E">(81.3)<br> 13.7</td>
+            <td bgcolor="#D2691E">(81.9)<br> 17.2</td>
+            <td bgcolor="#D2691E">(77.4)<br> 41.4</td>
+            <td bgcolor="#D2691E">(74.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">Malaria</th>
+            <td bgcolor="#D2691E">(66.9)<br> 323.7</td>
+            <td bgcolor="#D2691E">(47.7)<br> 87.5</td>
+            <td bgcolor="#D2691E">(88.1)<br> 23.8</td>
+            <td bgcolor="#D2691E">(36.6)<br> 28.8</td>
+            <td bgcolor="#D2691E">(90.6)<br> 29.3</td>
+            <td bgcolor="#D2691E">(47.7)<br> 24.2</td>
+            <td bgcolor="#D2691E">(70.6)<br> 23.7</td>
+            <td bgcolor="#D2691E">(70.3)<br> 21.4</td>
+            <td bgcolor="#D2691E">(83.3)<br> 13.7</td>
+            <td bgcolor="#D2691E">(85.9)<br> 17.2</td>
+            <td bgcolor="#D2691E">(70.4)<br> 41.4</td>
+            <td bgcolor="#D2691E">(74.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">TB</th>
+            <td bgcolor="#D2691E">(66.9)<br> 523.7</td>
+            <td bgcolor="#D2691E">(65.7)<br> 57.5</td>
+            <td bgcolor="#D2691E">(67.1)<br> 53.8</td>
+            <td bgcolor="#D2691E">(64.6)<br> 58.8</td>
+            <td bgcolor="#D2691E">(68.6)<br> 59.3</td>
+            <td bgcolor="#D2691E">(65.7)<br> 54.2</td>
+            <td bgcolor="#D2691E">(65.6)<br> 53.7</td>
+            <td bgcolor="#D2691E">(68.3)<br> 51.4</td>
+            <td bgcolor="#D2691E">(61.3)<br> 53.7</td>
+            <td bgcolor="#D2691E">(61.9)<br> 57.2</td>
+            <td bgcolor="#D2691E">(67.4)<br> 51.4</td>
+            <td bgcolor="#D2691E">(64.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#D2691E" border="2" scope="col">Suicide</th>
+
+            <td  >(65.1) <br>18.3</td>
+            <td >(64.9) <br>18.7</td>
+            <td >(65.7) <br>18.7</td>
+            <td >(65.7) <br>18.1</td>
+            <td >(64.6) <br>16.9</td>
+            <td >(62.4) <br>17.1</td>
+            <td >(62.8) <br>18.5</td>
+            <td >(65.3) <br>20.6</td>
+            <td >(69.1) <br>20.7</td>
+            <td >(69.3) <br>19.3</td>
+            <td >(66.7) <br>18.4</td>
+            <td >(65.1)</td>
+        </tr>
+        <hr>
+        <tr>
+            <th></th>
+            <th bgcolor="#9999CC" scope="col">Diarrhea/Dysentery</th>
+
+            <td border="2">(58.5)<br> 14.8</td>
+            <td border="2">(58.6)<br> 15.0</td>
+            <td border="2">(59.0)<br> 14.7</td>
+            <td border="2">(58.5)<br> 13.0</td>
+            <td border="2">(55.4)<br> 10.8</td>
+            <td border="2">(51.4)<br> 10.5</td>
+            <td border="2">(50.9)<br> 12.0</td>
+            <td border="2">(53.6)<br> 13.8</td>
+            <td border="2">(56.8)<br> 15.1</td>
+            <td border="2">(59.2)<br> 15.1</td>
+            <td border="2">(59.2)<br> 14.8</td>
+            <td border="2">(58.6)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th border="2" scope="col">Epilepsy</th>
+            <td bgcolor="#00FF00">(47.8)<br> 11.5</td>
+            <td bgcolor="#00FF00">(52.7)<br> 9.6</td>
+            <td bgcolor="#00FF00">(49.3)<br> 7.8</td>
+            <td bgcolor="#00FF00">(46.0)<br> 8.4</td>
+            <td bgcolor="#00FF00">(47.1)<br> 5.6</td>
+            <td bgcolor="#00FF00">(42.1)<br> 5.2</td>
+            <td bgcolor="#00FF00">(41.4)<br> 6.4</td>
+            <td bgcolor="#00FF00">(43.5)<br> 9.5</td>
+            <td bgcolor="#00FF00">(49.1)<br> 10.0</td>
+            <td bgcolor="#00FF00">(50.0)<br> 6.6</td>
+            <td bgcolor="#00FF00">(43.9)<br> 7.8</td>
+            <td bgcolor="#00FF00">(46.0)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#00FF00" scope="col">IHD/AMI</th>
+            <td bgcolor="#D2691E">(237.0)<br> </td>
+            <td bgcolor="#D2691E">(9.33)<br> 209.5</td>
+            <td bgcolor="#D2691E">(8.25)<br> 233.3</td>
+            <td bgcolor="#D2691E">(9.19)<br> 126.0</td>
+            <td bgcolor="#D2691E">(4.96)<br> 16.6</td>
+            <td bgcolor="#D2691E">(0.65)<br> 1.8</td>
+            <td bgcolor="#D2691E">(0.07)<br> 0.2</td>
+            <td bgcolor="#D2691E">(0.01)<br> 0.5</td>
+            <td bgcolor="#D2691E">(0.02)<br> 4.7</td>
+            <td bgcolor="#D2691E">(0.19)<br> 20.1</td>
+            <td bgcolor="#D2691E">(0.79)<br> 137.3</td>
+            <td bgcolor="#D2691E">(5.41)<br> 252.1</td>
+
+        </tr>
+
+    </table>
+    <hr>
+    <table width="90%" align="center">
+        <tr>
+            <h1>2016 discharged Patient Record</h1>
+            <p>
+                The number of undetermined cases among the brought-in-dead child cases and the concordance rate of CoDs
+                among the cases with determined CoDs by both of Death Notification Form and SmartVA in the Mbala general Hospital
+            </p>
+        <tr>
+            <th></th>
+            <th>Month</th>
+
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+        </tr>
+        <tr>Rank	Cause of Death	No.	%	Rank	Cause of Death	No.	%
+            <th></th>
+            <th bgcolor="#00FF00" scope="col"> HIV/AIDS</th>
+            <td bgcolor="#C0C0C0">(50.3)<br> 29.0</td>
+            <td bgcolor="#C0C0C0">(34.2)<br> 30.0</td>
+            <td bgcolor="#C0C0C0">(45.0)<br> 28.0</td>
+            <td bgcolor="#C0C0C0">(65.4)<br> 30.1</td>
+            <td bgcolor="#C0C0C0">(84.2)<br> 27.4</td>
+            <td bgcolor="#C0C0C0">(72.3)<br> 28.5</td>
+            <td bgcolor="#C0C0C0">(83.3)<br> 32.1</td>
+            <td bgcolor="#C0C0C0">(89.8)<br> 31.5</td>
+            <td bgcolor="#C0C0C0">(99.7)<br> 37.0</td>
+            <td bgcolor="#C0C0C0">(98.6)<br> 32.0</td>
+            <td bgcolor="#C0C0C0">(12.6)<br> 29.0</td>
+            <td bgcolor="#C0C0C0">(65.2)<br> 87.0</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">Stroke</th>
+            <td bgcolor="#D2691E">(76.9)<br> 323.7</td>
+            <td bgcolor="#D2691E">(45.7)<br> 87.5</td>
+            <td bgcolor="#D2691E">(87.1)<br> 23.8</td>
+            <td bgcolor="#D2691E">(34.6)<br> 28.8</td>
+            <td bgcolor="#D2691E">(98.6)<br> 29.3</td>
+            <td bgcolor="#D2691E">(45.7)<br> 24.2</td>
+            <td bgcolor="#D2691E">(75.6)<br> 23.7</td>
+            <td bgcolor="#D2691E">(78.3)<br> 21.4</td>
+            <td bgcolor="#D2691E">(81.3)<br> 13.7</td>
+            <td bgcolor="#D2691E">(81.9)<br> 17.2</td>
+            <td bgcolor="#D2691E">(77.4)<br> 41.4</td>
+            <td bgcolor="#D2691E">(74.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">Malaria</th>
+            <td bgcolor="#D2691E">(66.9)<br> 323.7</td>
+            <td bgcolor="#D2691E">(47.7)<br> 87.5</td>
+            <td bgcolor="#D2691E">(88.1)<br> 23.8</td>
+            <td bgcolor="#D2691E">(36.6)<br> 28.8</td>
+            <td bgcolor="#D2691E">(90.6)<br> 29.3</td>
+            <td bgcolor="#D2691E">(47.7)<br> 24.2</td>
+            <td bgcolor="#D2691E">(70.6)<br> 23.7</td>
+            <td bgcolor="#D2691E">(70.3)<br> 21.4</td>
+            <td bgcolor="#D2691E">(83.3)<br> 13.7</td>
+            <td bgcolor="#D2691E">(85.9)<br> 17.2</td>
+            <td bgcolor="#D2691E">(70.4)<br> 41.4</td>
+            <td bgcolor="#D2691E">(74.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">TB</th>
+            <td bgcolor="#D2691E">(66.9)<br> 523.7</td>
+            <td bgcolor="#D2691E">(65.7)<br> 57.5</td>
+            <td bgcolor="#D2691E">(67.1)<br> 53.8</td>
+            <td bgcolor="#D2691E">(64.6)<br> 58.8</td>
+            <td bgcolor="#D2691E">(68.6)<br> 59.3</td>
+            <td bgcolor="#D2691E">(65.7)<br> 54.2</td>
+            <td bgcolor="#D2691E">(65.6)<br> 53.7</td>
+            <td bgcolor="#D2691E">(68.3)<br> 51.4</td>
+            <td bgcolor="#D2691E">(61.3)<br> 53.7</td>
+            <td bgcolor="#D2691E">(61.9)<br> 57.2</td>
+            <td bgcolor="#D2691E">(67.4)<br> 51.4</td>
+            <td bgcolor="#D2691E">(64.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#D2691E" border="2" scope="col">Suicide</th>
+
+            <td  >(65.1) <br>18.3</td>
+            <td >(64.9) <br>18.7</td>
+            <td >(65.7) <br>18.7</td>
+            <td >(65.7) <br>18.1</td>
+            <td >(64.6) <br>16.9</td>
+            <td >(62.4) <br>17.1</td>
+            <td >(62.8) <br>18.5</td>
+            <td >(65.3) <br>20.6</td>
+            <td >(69.1) <br>20.7</td>
+            <td >(69.3) <br>19.3</td>
+            <td >(66.7) <br>18.4</td>
+            <td >(65.1)</td>
+        </tr>
+        <hr>
+        <tr>
+            <th></th>
+            <th bgcolor="#9999CC" scope="col">Diarrhea/Dysentery</th>
+
+            <td border="2">(58.5)<br> 14.8</td>
+            <td border="2">(58.6)<br> 15.0</td>
+            <td border="2">(59.0)<br> 14.7</td>
+            <td border="2">(58.5)<br> 13.0</td>
+            <td border="2">(55.4)<br> 10.8</td>
+            <td border="2">(51.4)<br> 10.5</td>
+            <td border="2">(50.9)<br> 12.0</td>
+            <td border="2">(53.6)<br> 13.8</td>
+            <td border="2">(56.8)<br> 15.1</td>
+            <td border="2">(59.2)<br> 15.1</td>
+            <td border="2">(59.2)<br> 14.8</td>
+            <td border="2">(58.6)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th border="2" scope="col">Epilepsy</th>
+            <td bgcolor="#00FF00">(47.8)<br> 11.5</td>
+            <td bgcolor="#00FF00">(52.7)<br> 9.6</td>
+            <td bgcolor="#00FF00">(49.3)<br> 7.8</td>
+            <td bgcolor="#00FF00">(46.0)<br> 8.4</td>
+            <td bgcolor="#00FF00">(47.1)<br> 5.6</td>
+            <td bgcolor="#00FF00">(42.1)<br> 5.2</td>
+            <td bgcolor="#00FF00">(41.4)<br> 6.4</td>
+            <td bgcolor="#00FF00">(43.5)<br> 9.5</td>
+            <td bgcolor="#00FF00">(49.1)<br> 10.0</td>
+            <td bgcolor="#00FF00">(50.0)<br> 6.6</td>
+            <td bgcolor="#00FF00">(43.9)<br> 7.8</td>
+            <td bgcolor="#00FF00">(46.0)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#00FF00" scope="col">IHD/AMI</th>
+            <td bgcolor="#D2691E">(237.0)<br> </td>
+            <td bgcolor="#D2691E">(9.33)<br> 209.5</td>
+            <td bgcolor="#D2691E">(8.25)<br> 233.3</td>
+            <td bgcolor="#D2691E">(9.19)<br> 126.0</td>
+            <td bgcolor="#D2691E">(4.96)<br> 16.6</td>
+            <td bgcolor="#D2691E">(0.65)<br> 1.8</td>
+            <td bgcolor="#D2691E">(0.07)<br> 0.2</td>
+            <td bgcolor="#D2691E">(0.01)<br> 0.5</td>
+            <td bgcolor="#D2691E">(0.02)<br> 4.7</td>
+            <td bgcolor="#D2691E">(0.19)<br> 20.1</td>
+            <td bgcolor="#D2691E">(0.79)<br> 137.3</td>
+            <td bgcolor="#D2691E">(5.41)<br> 252.1</td>
+
+        </tr>
+
+    </table>
+    <hr>
+    <hr>
+    <table width="90%" align="center">
+        <tr>
+            <h1>2017 discharged Patient Record</h1>
+            <p>
+                The number of undetermined cases among the brought-in-dead child cases and the concordance rate of CoDs
+                among the cases with determined CoDs by both of Death Notification Form and SmartVA in the Mbala general Hospital
+            </p>
+        <tr>
+            <th></th>
+            <th>Month</th>
+
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+        </tr>
+        <tr>Rank	Cause of Death	No.	%	Rank	Cause of Death	No.	%
+            <th></th>
+            <th bgcolor="#00FF00" scope="col"> HIV/AIDS</th>
+            <td bgcolor="#C0C0C0">(50.3)<br> 29.0</td>
+            <td bgcolor="#C0C0C0">(34.2)<br> 30.0</td>
+            <td bgcolor="#C0C0C0">(45.0)<br> 28.0</td>
+            <td bgcolor="#C0C0C0">(65.4)<br> 30.1</td>
+            <td bgcolor="#C0C0C0">(84.2)<br> 27.4</td>
+            <td bgcolor="#C0C0C0">(72.3)<br> 28.5</td>
+            <td bgcolor="#C0C0C0">(83.3)<br> 32.1</td>
+            <td bgcolor="#C0C0C0">(89.8)<br> 31.5</td>
+            <td bgcolor="#C0C0C0">(99.7)<br> 37.0</td>
+            <td bgcolor="#C0C0C0">(98.6)<br> 32.0</td>
+            <td bgcolor="#C0C0C0">(12.6)<br> 29.0</td>
+            <td bgcolor="#C0C0C0">(65.2)<br> 87.0</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">Stroke</th>
+            <td bgcolor="#D2691E">(76.9)<br> 323.7</td>
+            <td bgcolor="#D2691E">(45.7)<br> 87.5</td>
+            <td bgcolor="#D2691E">(87.1)<br> 23.8</td>
+            <td bgcolor="#D2691E">(34.6)<br> 28.8</td>
+            <td bgcolor="#D2691E">(98.6)<br> 29.3</td>
+            <td bgcolor="#D2691E">(45.7)<br> 24.2</td>
+            <td bgcolor="#D2691E">(75.6)<br> 23.7</td>
+            <td bgcolor="#D2691E">(78.3)<br> 21.4</td>
+            <td bgcolor="#D2691E">(81.3)<br> 13.7</td>
+            <td bgcolor="#D2691E">(81.9)<br> 17.2</td>
+            <td bgcolor="#D2691E">(77.4)<br> 41.4</td>
+            <td bgcolor="#D2691E">(74.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">Malaria</th>
+            <td bgcolor="#D2691E">(66.9)<br> 323.7</td>
+            <td bgcolor="#D2691E">(47.7)<br> 87.5</td>
+            <td bgcolor="#D2691E">(88.1)<br> 23.8</td>
+            <td bgcolor="#D2691E">(36.6)<br> 28.8</td>
+            <td bgcolor="#D2691E">(90.6)<br> 29.3</td>
+            <td bgcolor="#D2691E">(47.7)<br> 24.2</td>
+            <td bgcolor="#D2691E">(70.6)<br> 23.7</td>
+            <td bgcolor="#D2691E">(70.3)<br> 21.4</td>
+            <td bgcolor="#D2691E">(83.3)<br> 13.7</td>
+            <td bgcolor="#D2691E">(85.9)<br> 17.2</td>
+            <td bgcolor="#D2691E">(70.4)<br> 41.4</td>
+            <td bgcolor="#D2691E">(74.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">TB</th>
+            <td bgcolor="#D2691E">(66.9)<br> 523.7</td>
+            <td bgcolor="#D2691E">(65.7)<br> 57.5</td>
+            <td bgcolor="#D2691E">(67.1)<br> 53.8</td>
+            <td bgcolor="#D2691E">(64.6)<br> 58.8</td>
+            <td bgcolor="#D2691E">(68.6)<br> 59.3</td>
+            <td bgcolor="#D2691E">(65.7)<br> 54.2</td>
+            <td bgcolor="#D2691E">(65.6)<br> 53.7</td>
+            <td bgcolor="#D2691E">(68.3)<br> 51.4</td>
+            <td bgcolor="#D2691E">(61.3)<br> 53.7</td>
+            <td bgcolor="#D2691E">(61.9)<br> 57.2</td>
+            <td bgcolor="#D2691E">(67.4)<br> 51.4</td>
+            <td bgcolor="#D2691E">(64.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#D2691E" border="2" scope="col">Suicide</th>
+
+            <td  >(65.1) <br>18.3</td>
+            <td >(64.9) <br>18.7</td>
+            <td >(65.7) <br>18.7</td>
+            <td >(65.7) <br>18.1</td>
+            <td >(64.6) <br>16.9</td>
+            <td >(62.4) <br>17.1</td>
+            <td >(62.8) <br>18.5</td>
+            <td >(65.3) <br>20.6</td>
+            <td >(69.1) <br>20.7</td>
+            <td >(69.3) <br>19.3</td>
+            <td >(66.7) <br>18.4</td>
+            <td >(65.1)</td>
+        </tr>
+        <hr>
+        <tr>
+            <th></th>
+            <th bgcolor="#9999CC" scope="col">Diarrhea/Dysentery</th>
+
+            <td border="2">(58.5)<br> 14.8</td>
+            <td border="2">(58.6)<br> 15.0</td>
+            <td border="2">(59.0)<br> 14.7</td>
+            <td border="2">(58.5)<br> 13.0</td>
+            <td border="2">(55.4)<br> 10.8</td>
+            <td border="2">(51.4)<br> 10.5</td>
+            <td border="2">(50.9)<br> 12.0</td>
+            <td border="2">(53.6)<br> 13.8</td>
+            <td border="2">(56.8)<br> 15.1</td>
+            <td border="2">(59.2)<br> 15.1</td>
+            <td border="2">(59.2)<br> 14.8</td>
+            <td border="2">(58.6)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th border="2" scope="col">Epilepsy</th>
+            <td bgcolor="#00FF00">(47.8)<br> 11.5</td>
+            <td bgcolor="#00FF00">(52.7)<br> 9.6</td>
+            <td bgcolor="#00FF00">(49.3)<br> 7.8</td>
+            <td bgcolor="#00FF00">(46.0)<br> 8.4</td>
+            <td bgcolor="#00FF00">(47.1)<br> 5.6</td>
+            <td bgcolor="#00FF00">(42.1)<br> 5.2</td>
+            <td bgcolor="#00FF00">(41.4)<br> 6.4</td>
+            <td bgcolor="#00FF00">(43.5)<br> 9.5</td>
+            <td bgcolor="#00FF00">(49.1)<br> 10.0</td>
+            <td bgcolor="#00FF00">(50.0)<br> 6.6</td>
+            <td bgcolor="#00FF00">(43.9)<br> 7.8</td>
+            <td bgcolor="#00FF00">(46.0)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#00FF00" scope="col">IHD/AMI</th>
+            <td bgcolor="#D2691E">(237.0)<br> </td>
+            <td bgcolor="#D2691E">(9.33)<br> 209.5</td>
+            <td bgcolor="#D2691E">(8.25)<br> 233.3</td>
+            <td bgcolor="#D2691E">(9.19)<br> 126.0</td>
+            <td bgcolor="#D2691E">(4.96)<br> 16.6</td>
+            <td bgcolor="#D2691E">(0.65)<br> 1.8</td>
+            <td bgcolor="#D2691E">(0.07)<br> 0.2</td>
+            <td bgcolor="#D2691E">(0.01)<br> 0.5</td>
+            <td bgcolor="#D2691E">(0.02)<br> 4.7</td>
+            <td bgcolor="#D2691E">(0.19)<br> 20.1</td>
+            <td bgcolor="#D2691E">(0.79)<br> 137.3</td>
+            <td bgcolor="#D2691E">(5.41)<br> 252.1</td>
+
+        </tr>
+
+    </table>
+    <hr>
+    <hr>
+    <table width="100%">
+        <tr>
+            <h1>2018 discharged Patient Record</h1>
+            <p>
+                The number of undetermined cases among the brought-in-dead child cases and the concordance rate of CoDs
+                among the cases with determined CoDs by both of Death Notification Form and SmartVA in the Mbala general Hospital
+            </p>
+        <tr>
+            <th></th>
+            <th>Month</th>
+
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#00FF00" scope="col">Both Undetermined </th>
+            <td bgcolor="#C0C0C0">(85.3)<br> 29.0</td>
+            <td bgcolor="#C0C0C0">(84.2)<br> 30.0</td>
+            <td bgcolor="#C0C0C0">(86.0)<br> 28.0</td>
+            <td bgcolor="#C0C0C0">(82.4)<br> 30.1</td>
+            <td bgcolor="#C0C0C0">(86.2)<br> 27.4</td>
+            <td bgcolor="#C0C0C0">(81.3)<br> 28.5</td>
+            <td bgcolor="#C0C0C0">(83.3)<br> 32.1</td>
+            <td bgcolor="#C0C0C0">(89.8)<br> 31.5</td>
+            <td bgcolor="#C0C0C0">(88.7)<br> 37.0</td>
+            <td bgcolor="#C0C0C0">(98.6)<br> 32.0</td>
+            <td bgcolor="#C0C0C0">(89.6)<br> 29.0</td>
+            <td bgcolor="#C0C0C0">(84.2)<br> 87.0</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">Undetermined only by Death Notification Form</th>
+            <td bgcolor="#D2691E">(73.9)<br> 23.7</td>
+            <td bgcolor="#D2691E">(74.7)<br> 24.5</td>
+            <td bgcolor="#D2691E">(76.1)<br> 24.8</td>
+            <td bgcolor="#D2691E">(76.6)<br> 24.8</td>
+            <td bgcolor="#D2691E">(76.6)<br> 24.3</td>
+            <td bgcolor="#D2691E">(75.7)<br> 24.2</td>
+            <td bgcolor="#D2691E">(75.6)<br> 25.7</td>
+            <td bgcolor="#D2691E">(78.3)<br> 27.4</td>
+            <td bgcolor="#D2691E">(81.3)<br> 27.7</td>
+            <td bgcolor="#D2691E">(81.9)<br> 25.2</td>
+            <td bgcolor="#D2691E">(77.4)<br> 23.4</td>
+            <td bgcolor="#D2691E">(74.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#D2691E" scope="col">Undetermined only by SmartVA</th>
+
+            <td bgcolor="#9999CC">(65.1) <br>18.3</td>
+            <td bgcolor="#9999CC">(64.9) <br>18.7</td>
+            <td bgcolor="#9999CC">(65.7) <br>18.7</td>
+            <td bgcolor="#9999CC">(65.7) <br>18.1</td>
+            <td bgcolor="#9999CC">(64.6) <br>16.9</td>
+            <td bgcolor="#9999CC">(62.4) <br>17.1</td>
+            <td bgcolor="#9999CC">(62.8) <br>18.5</td>
+            <td bgcolor="#9999CC">(65.3) <br>20.6</td>
+            <td bgcolor="#9999CC">(69.1) <br>20.7</td>
+            <td bgcolor="#9999CC">(69.3) <br>19.3</td>
+            <td bgcolor="#9999CC">(66.7) <br>18.4</td>
+            <td bgcolor="#9999CC">(65.1)</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#9999CC" scope="col">Both Determined</th>
+
+            <td border="2">(58.5)<br> 14.8</td>
+            <td border="2">(58.6)<br> 15.0</td>
+            <td border="2">(59.0)<br> 14.7</td>
+            <td border="2">(58.5)<br> 13.0</td>
+            <td border="2">(55.4)<br> 10.8</td>
+            <td border="2">(51.4)<br> 10.5</td>
+            <td border="2">(50.9)<br> 12.0</td>
+            <td border="2">(53.6)<br> 13.8</td>
+            <td border="2">(56.8)<br> 15.1</td>
+            <td border="2">(59.2)<br> 15.1</td>
+            <td border="2">(59.2)<br> 14.8</td>
+            <td border="2">(58.6)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th border="2" scope="col">Matched CoDs between both methods</th>
+            <td bgcolor="#00FF00">(47.8)<br> 11.5</td>
+            <td bgcolor="#00FF00">(52.7)<br> 9.6</td>
+            <td bgcolor="#00FF00">(49.3)<br> 7.8</td>
+            <td bgcolor="#00FF00">(46.0)<br> 8.4</td>
+            <td bgcolor="#00FF00">(47.1)<br> 5.6</td>
+            <td bgcolor="#00FF00">(42.1)<br> 5.2</td>
+            <td bgcolor="#00FF00">(41.4)<br> 6.4</td>
+            <td bgcolor="#00FF00">(43.5)<br> 9.5</td>
+            <td bgcolor="#00FF00">(49.1)<br> 10.0</td>
+            <td bgcolor="#00FF00">(50.0)<br> 6.6</td>
+            <td bgcolor="#00FF00">(43.9)<br> 7.8</td>
+            <td bgcolor="#00FF00">(46.0)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#00FF00" scope="col">Unmatched CoDs between both methods</th>
+            <td bgcolor="#D2691E">(237.0)<br> </td>
+            <td bgcolor="#D2691E">(9.33)<br> 209.5</td>
+            <td bgcolor="#D2691E">(8.25)<br> 233.3</td>
+            <td bgcolor="#D2691E">(9.19)<br> 126.0</td>
+            <td bgcolor="#D2691E">(4.96)<br> 16.6</td>
+            <td bgcolor="#D2691E">(0.65)<br> 1.8</td>
+            <td bgcolor="#D2691E">(0.07)<br> 0.2</td>
+            <td bgcolor="#D2691E">(0.01)<br> 0.5</td>
+            <td bgcolor="#D2691E">(0.02)<br> 4.7</td>
+            <td bgcolor="#D2691E">(0.19)<br> 20.1</td>
+            <td bgcolor="#D2691E">(0.79)<br> 137.3</td>
+            <td bgcolor="#D2691E">(5.41)<br> 252.1</td>
+
+        </tr>
+
+    </table><table width="90%" align="center">
+        <tr>
+            <h1>2019 discharged Patient Records</h1>
+            <p>
+                The number of undetermined cases among the brought-in-dead child cases and the concordance rate of CoDs
+                among the cases with determined CoDs by both of Death Notification Form and Smart in the Mbala general Hospital
+            </p>
+        <tr>
+            <th></th>
+            <th>Month</th>
+
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+        </tr>
+        <tr>Rank	Cause of Death	No.	%	Rank	Cause of Death	No.	%
+            <th></th>
+            <th bgcolor="#00FF00" scope="col"> HIV/AIDS</th>
+            <td bgcolor="#C0C0C0">(50.3)<br> 29.0</td>
+            <td bgcolor="#C0C0C0">(34.2)<br> 30.0</td>
+            <td bgcolor="#C0C0C0">(45.0)<br> 28.0</td>
+            <td bgcolor="#C0C0C0">(65.4)<br> 30.1</td>
+            <td bgcolor="#C0C0C0">(84.2)<br> 27.4</td>
+            <td bgcolor="#C0C0C0">(72.3)<br> 28.5</td>
+            <td bgcolor="#C0C0C0">(83.3)<br> 32.1</td>
+            <td bgcolor="#C0C0C0">(89.8)<br> 31.5</td>
+            <td bgcolor="#C0C0C0">(99.7)<br> 37.0</td>
+            <td bgcolor="#C0C0C0">(98.6)<br> 32.0</td>
+            <td bgcolor="#C0C0C0">(12.6)<br> 29.0</td>
+            <td bgcolor="#C0C0C0">(65.2)<br> 87.0</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">Stroke</th>
+            <td bgcolor="#D2691E">(76.9)<br> 323.7</td>
+            <td bgcolor="#D2691E">(45.7)<br> 87.5</td>
+            <td bgcolor="#D2691E">(87.1)<br> 23.8</td>
+            <td bgcolor="#D2691E">(34.6)<br> 28.8</td>
+            <td bgcolor="#D2691E">(98.6)<br> 29.3</td>
+            <td bgcolor="#D2691E">(45.7)<br> 24.2</td>
+            <td bgcolor="#D2691E">(75.6)<br> 23.7</td>
+            <td bgcolor="#D2691E">(78.3)<br> 21.4</td>
+            <td bgcolor="#D2691E">(81.3)<br> 13.7</td>
+            <td bgcolor="#D2691E">(81.9)<br> 17.2</td>
+            <td bgcolor="#D2691E">(77.4)<br> 41.4</td>
+            <td bgcolor="#D2691E">(74.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">Malaria</th>
+            <td bgcolor="#D2691E">(66.9)<br> 323.7</td>
+            <td bgcolor="#D2691E">(47.7)<br> 87.5</td>
+            <td bgcolor="#D2691E">(88.1)<br> 23.8</td>
+            <td bgcolor="#D2691E">(36.6)<br> 28.8</td>
+            <td bgcolor="#D2691E">(90.6)<br> 29.3</td>
+            <td bgcolor="#D2691E">(47.7)<br> 24.2</td>
+            <td bgcolor="#D2691E">(70.6)<br> 23.7</td>
+            <td bgcolor="#D2691E">(70.3)<br> 21.4</td>
+            <td bgcolor="#D2691E">(83.3)<br> 13.7</td>
+            <td bgcolor="#D2691E">(85.9)<br> 17.2</td>
+            <td bgcolor="#D2691E">(70.4)<br> 41.4</td>
+            <td bgcolor="#D2691E">(74.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#C0C0C0" scope="col">TB</th>
+            <td bgcolor="#D2691E">(66.9)<br> 523.7</td>
+            <td bgcolor="#D2691E">(65.7)<br> 57.5</td>
+            <td bgcolor="#D2691E">(67.1)<br> 53.8</td>
+            <td bgcolor="#D2691E">(64.6)<br> 58.8</td>
+            <td bgcolor="#D2691E">(68.6)<br> 59.3</td>
+            <td bgcolor="#D2691E">(65.7)<br> 54.2</td>
+            <td bgcolor="#D2691E">(65.6)<br> 53.7</td>
+            <td bgcolor="#D2691E">(68.3)<br> 51.4</td>
+            <td bgcolor="#D2691E">(61.3)<br> 53.7</td>
+            <td bgcolor="#D2691E">(61.9)<br> 57.2</td>
+            <td bgcolor="#D2691E">(67.4)<br> 51.4</td>
+            <td bgcolor="#D2691E">(64.1)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#D2691E" border="2" scope="col">Suicide</th>
+
+            <td  >(65.1) <br>18.3</td>
+            <td >(64.9) <br>18.7</td>
+            <td >(65.7) <br>18.7</td>
+            <td >(65.7) <br>18.1</td>
+            <td >(64.6) <br>16.9</td>
+            <td >(62.4) <br>17.1</td>
+            <td >(62.8) <br>18.5</td>
+            <td >(65.3) <br>20.6</td>
+            <td >(69.1) <br>20.7</td>
+            <td >(69.3) <br>19.3</td>
+            <td >(66.7) <br>18.4</td>
+            <td >(65.1)</td>
+        </tr>
+        <hr>
+        <tr>
+            <th></th>
+            <th bgcolor="#9999CC" scope="col">Diarrhea/Dysentery</th>
+
+            <td border="2">(58.5)<br> 14.8</td>
+            <td border="2">(58.6)<br> 15.0</td>
+            <td border="2">(59.0)<br> 14.7</td>
+            <td border="2">(58.5)<br> 13.0</td>
+            <td border="2">(55.4)<br> 10.8</td>
+            <td border="2">(51.4)<br> 10.5</td>
+            <td border="2">(50.9)<br> 12.0</td>
+            <td border="2">(53.6)<br> 13.8</td>
+            <td border="2">(56.8)<br> 15.1</td>
+            <td border="2">(59.2)<br> 15.1</td>
+            <td border="2">(59.2)<br> 14.8</td>
+            <td border="2">(58.6)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th border="2" scope="col">Epilepsy</th>
+            <td bgcolor="#00FF00">(47.8)<br> 11.5</td>
+            <td bgcolor="#00FF00">(52.7)<br> 9.6</td>
+            <td bgcolor="#00FF00">(49.3)<br> 7.8</td>
+            <td bgcolor="#00FF00">(46.0)<br> 8.4</td>
+            <td bgcolor="#00FF00">(47.1)<br> 5.6</td>
+            <td bgcolor="#00FF00">(42.1)<br> 5.2</td>
+            <td bgcolor="#00FF00">(41.4)<br> 6.4</td>
+            <td bgcolor="#00FF00">(43.5)<br> 9.5</td>
+            <td bgcolor="#00FF00">(49.1)<br> 10.0</td>
+            <td bgcolor="#00FF00">(50.0)<br> 6.6</td>
+            <td bgcolor="#00FF00">(43.9)<br> 7.8</td>
+            <td bgcolor="#00FF00">(46.0)<br></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th bgcolor="#00FF00" scope="col">IHD/AMI</th>
+            <td bgcolor="#D2691E">(237.0)<br> </td>
+            <td bgcolor="#D2691E">(9.33)<br> 209.5</td>
+            <td bgcolor="#D2691E">(8.25)<br> 233.3</td>
+            <td bgcolor="#D2691E">(9.19)<br> 126.0</td>
+            <td bgcolor="#D2691E">(4.96)<br> 16.6</td>
+            <td bgcolor="#D2691E">(0.65)<br> 1.8</td>
+            <td bgcolor="#D2691E">(0.07)<br> 0.2</td>
+            <td bgcolor="#D2691E">(0.01)<br> 0.5</td>
+            <td bgcolor="#D2691E">(0.02)<br> 4.7</td>
+            <td bgcolor="#D2691E">(0.19)<br> 20.1</td>
+            <td bgcolor="#D2691E">(0.79)<br> 137.3</td>
+            <td bgcolor="#D2691E">(5.41)<br> 252.1</td>
+
+        </tr>
+
+    </table>
+    <hr>
+    <hr>
+    <table width="99%" border="1" cellpadding="0" cellspacing="0" bordercolor="#0066CC">
+        <tr valign="top">
+            <td width="100%" align="center" bgcolor="#000000">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style18">Mbala
+                    general Hospital</span></td>
+            <td width="0%" align="right"></td>
+        </tr>
+    </table>
+    <table width="98%" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" valign="top" bgcolor="#CCCCCC">
+
+                Address :PO Box 420059, Mbala. All rights reserved.<br>
+                <a href="benluomacheng@gmail.com">E-mail Us Today!</a> | <a href="Privacy.php">Your Privacy</a><br>
+        </tr>
+    </table>
+                                                                            
+</body>
+<style>
+    td{
+background-color:rgb(65, 60, 60);
+color:white;
+    }
+</style>#                                                                                                                                                            

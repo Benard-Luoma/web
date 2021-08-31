@@ -1,0 +1,557 @@
+<html>
+           
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                             
+ <!-- navigation -->                   
+ <body>
+  <style>
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: 90%;
+    }
+    h1{
+      background-image:url(images.jpg);
+      background-repeat:no-repeat;
+      font-size:50px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-size:100%;
+      background-blend-mode: saturation;
+      
+    }
+    /* Style the navigation bar */
+.navbar {
+  width: 62%;
+  background-color: #555;
+  overflow: auto;
+  float: right;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+ 
+}
+
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 13px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+      
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #030303;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      opacity: .6;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: rgb(255, 255, 255);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: rgb(44, 42, 42);
+      opacity:.8;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+   /*move fieldset in the same line with the*/
+
+
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: justify;
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+
+    div.card{
+  float:left;
+
+  
+}
+p{
+  color:black;
+  text-align: justify;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+  
+}
+iframe{
+  float:right;
+}
+video{
+float:left;
+}
+nav{
+float: center;
+}
+article{
+      width: 44%;
+      padding-right: 3%;
+      margin-left: 0%;
+      float: left;
+     
+     text-align: justify; 
+    }
+    aside{
+      width: 48%;
+      padding-right: 4%;
+      margin-left: 3%;
+      float: right;
+
+     text-align: justify;
+    }
+    section{
+      
+      color:#ddd;
+      text-align: justify;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <center><div class="navbar">
+      <a href="home.html">Home</a>
+       <div class="dropdown">
+        <button class="dropbtn">Pharmacy
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Drugs.html">Drugs</a>
+          <a href="lab.html">Labolitary</a>
+         
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Patient 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="std.html">Statistics of death</a>
+          <a href="appointment form.html">Patients Appointment form</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Services offered
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="cancer.html">cancer treatment</a>
+          <a href="malaria.html">Malaria treatment</a>
+          <a href="brain.html">Brian treatment</a>
+          <a href="labor.html">labor</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Doctors 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="doc.php">Find Doctor</a>
+          <a href="Mfs.html">Members of staff</a>
+          <a href="chatroom.html">chatroom</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">About us 
+          <i class="fa fa-fw fa-envelope"></i>
+      
+        </button>
+        <div class="dropdown-content">
+          <a href="Location.php">Location</a>
+         
+        </div>
+      </div>
+      <a href="login.php"><i class="fa fa-fw fa-user"></i> Login</a>
+    </div>
+  </div>
+</center>
+<br>
+<br>
+<br>
+<hr>
+
+  <center><h1 >WELCOME TO MBALA GENERAL HOSPITAL WEBSITE</h1></center>
+<!-- Add icon library -->
+
+<hr>
+<div class="card">
+  <img src="img/download.jpg" alt="John" style="width:100%; height:40%" >
+ 
+  <p class="title"></p>
+  <p><h1 style="font-size:40px">Chongwe District Hospital: Model of quality service
+    </h1></p>
+  <aside><p align="justify">
+    
+    <br>
+    Web Editor
+    Share This!
+    By KAPALA CHISUNKA
+    WHEN Christine Nkomeshya Chibango fell sick after having persistent headaches, she had no idea how critical her condition was until she sought medical help at Levy Mwanawasa Hospital.
+    Unfortunately for Mrs Chibango, there were no specialised medical personnel at Levy Hospital to attend to her at that particular time as she was informed that they were all out. The staff she found, however, suspected that she might have meningitis.
+    Out of desperation, her family contacted Chongwe District medical officer Charles Msiska.
+    Before long, Dr Msiska came to Levy Hospital, he examined me and I was given a referral letter to Chongwe district. He also ensured that he called back the medical personnel, who were not at the hospital, to come back,â€ she said.
+    I was given an appointment but because I am diabetic, my procedure was postponed.Â  Unfortunately, when I 
+    was due for my second appointment, 
+ 
+  </p></aside>
+<div class="row">
+    <div class="column nature">
+      <div class="content">
+        <img src="img/images (1).jpg" alt="Mountains" style="width:100%; height:40%">
+        <h4>Mountains</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <img src="img/images (1).png" alt="Lights" style="width:100%; height:40%">
+        <h4>Lights</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+
+   <aside> Mr Chipola said he decided to seek medical assistance from Chongwe District Hospital.
+    I was operated on in no time. After the procedure, I was admitted for three days before I was discharged. I am grateful to the medical staff here and to government for this district hospital,â€ he said.
+    These testimonies were heard in Chongwe recently when the district hospital held its first ever open day under the theme, Enhancing community involvement in quality health care delivery.
+    <br><img src="img/images (2).jpg" alt="John" align="centre" style="width:100%; height:50%" ><br>
+    The holding of the health day follows a directive by President Sata for all health care facilities to set aside a day to interact with the communities they service and showcase the services offered.
+    Officiating at the event, Minister of Community Development, Mother and Child Health Emerine Kabanshi said Government remains committed to the provision of quality health services as close to the people as possible through a competent staff.
+    Government will, therefore, support this institution through the provision of all medical equipment and furniture
+     deserved of a first level hospital. This is the only hospital we have in Chongwe catering for a population of 
+     160,000, serviced by 29 health facilities,â€ Ms Kabanshi said.  <p>He said an average of 100 deliveries are conducted per month in the maternity department.
+      Dr Mwanza, however, expressed concern on delays by authorities to deliver medical equipment and furniture for the district hospital.
+      Senior Chieftainess Nkomeshya Mukamambo thanked Government for constructing the hospital as it has reduced on the number of referrals to Lusaka.
+     </p>
+  </aside>
+    <p>Ms Kabanshi said Government is aware that the four specified hospitals in Lusaka are not adequate to cater for the population and that is the reason it is building more hospitals and equip them accordingly to decongest the existing ones.
+    Certain procedures which would normally be referred to Lusaka will now be done here as the hospital theatre here has been opened. The Government will also focus on securing more equipment to further uplift the services at this hospital.
+    As you are aware, Government is planning to upgrade some of the first level hospitals, which have been performing
+     very well, to general hospital status,â€ she said.
+    </p>
+    <p>benefits of upgrading a hospital status is that apart from the current staff, the establishment is upgraded so that various specialist doctors are included, which leads to specialised care.
+    Chongwe District Hospital is strategically located along the highway and has been receiving a lot of road traffic accident victims, hence the importance of upgrading and strengthening this institution,â€ Ms Kabanshi said.
+    And medical-in-charge at the hospital, Job Mwanza, said about 28,000 patients have been attended to at the institution since it was opened in 2011, most of which would have been referred to Lusaka in the past.
+    Dr Mwanza said the theatre at the hospital was fully functional adding that 52 ceaserian sections and 205 minor
+     surgeries have been conducted since January 2014.
+  </p> 
+  <div class="card" >
+      <img src="img/images (1).jpg" alt="John" style="width:100%; height:40%" 
+      >
+         <p class="title"></p>
+         <p><button><h2>Chongwe District Hospital: Model of quality service</h2>WE DO PROVIDE ALL MEDICAL SERVICES WITH QUALITY</button></p>
+       
+       </div>
+       <br><br><br><br><br><br> <br><br><br><br><br><br>    
+   <br><br><br><br><br><br>
+   <section> <p>In a speech read for her by senior headman Kapuka, the traditional leader said the constructing of the hospital within Chongwe has addressed many challenges, which her people mostly from rural communities were facing such as transportation.
+    Meanwhile, Dr Msiska said the separation of Chongwe and Rufunsa districts has enabled them to record success in the service delivery.
+    Since Chongwe has been separated from Rufunsa, we have seen the benefits in service delivery. In the past, we used to receive a grant of between K140,000 to K150,000 for both Chongwe and Rufunsa.
+    But after the separation, Chongwe receives K190,000 and Rufunsa receives K180,000. With regards to transportation, Chongwe received three ambulances and Rufunsa got two,â€ Dr Msiska said.
+  </p></section>
+  </div>
+</div>
+</div>
+   
+ <script>$('#myCarousel').on('fade.bs.carousel', function () {
+  // do something…
+  })</script>
+
+  <div class="card" >
+    <img src="img/download (1).jpg" alt="John" style="width:40%; height:40%" >
+    <asnb></asnb><img src="img/download (1).jpg" alt="John" style="width:40%; height:40%" >
+    
+    <p class="title"></p>
+    <p><h1 style="font-size:40px"> LETS LOOK AFTER THE KIDS</h1></p>
+    <p><button><h2>Lusaka Province Minister Charles Shawa says he happy that the long awaited construction of the Chongwe District Hospital has finally been completed.
+
+      Speaking when he toured the biggest health facility in the District today, Mr. Shawa said he was particularly pleased that the completed construction of the hospital was in line with government’s policy of providing health services as closer to the people as possible.
+      
+      The Provincial Minister noted that the construction of the Health Centre in the district will ease the burden of people going to far flung areas to access health care.
+      
+      The modern hospital has constructed at a total cost of about 7 billion kwacha by government.
+      
+       </div>
+ <!-- Portfolio Gallery Grid -->
+
+
+  <div class="column cars">
+    <div class="content">
+      <img src="img/images (14).jpg" alt="Car" style="width:100%; height:40%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="img/images (15).jpg" alt="Car" style="width:100%; height:40%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="img/images (17).jpg" alt="Car" style="width:100%; height:40%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="img/images (18).jpg" alt="People" style="width:100%; height:40%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="img/images (19).jpg" alt="People" style="width:100%; height:40%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="img/images (2).jpg" alt="People" style="width:100%; height:40%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+</style>
+<script>
+    filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+  
+  
+    
+    <table width="99%" >
+      
+      <tr>
+          <th>MEANT FOR</th>
+          <th>SERVICES</th>
+     </tr>
+
+      <tr>   
+          <td align="center">Doctors </td>
+          <td align="center">Blood Services</td>    
+      </tr>
+
+      <tr>  
+          <td align="center">Surgeons</td>
+          <td align="center">Laboratory Services</td>    
+      </tr>
+
+      <tr>   
+          <td align="center">Dentists</td>
+          <td align="center">Brain Scan and Operations</td>
+ </tr>
+
+      <tr>
+  
+          <td align="center">Information Seekers</td>
+          <td align="center">Cancer and Liver Treatment</td>
+          
+      </tr>
+      <tr>  
+        <td align="center">Patients</td>
+        <td  align="center">Labor</td>  
+    </tr>
+  </table>
+
+    <table width="99%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="top" bgcolor="#333">
+    
+      Address	:PO Box 420059, Mbala. All rights reserved.<br>
+    <a href = "benluomacheng@gmail.com">E-mail Us Today!</a> | <a href = "logindoc.php">Your Privacy</a><br>
+    </tr>
+    </table>
+  </footer>                                                                  
+</body>
+
+</div>
+</html>

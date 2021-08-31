@@ -1,0 +1,612 @@
+<html>
+           
+<head>
+
+<body>
+
+  <ul>
+                             
+ <!-- navigation -->                   
+ <body>
+  <style>
+    p{
+      text-align: justify;
+    }
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: 100%;
+    }
+    h1{
+      background-image:url(images.jpg);
+      background-repeat:no-repeat;
+      font-size:50px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-size:100%;
+      background-blend-mode: saturation;
+      
+    }
+    h2{
+        color:rgb(42, 42, 82);
+    }
+    /* Style the navigation bar */
+    .navbar {
+  width: 78%;
+  background-color: #555;
+  
+  float: right;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+ 
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+      
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      opacity: .6;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: rgb(44, 42, 42);
+      opacity:.8;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+   /*move fieldset in the same line with the*/
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+/*button*/
+button {
+  border: none;
+  outline: 0;
+  
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: justify;
+  cursor: pointer;
+
+  font-size: 12px;
+}
+/*div.card*/
+
+    div.card{
+  float:left; 
+}
+p{
+  color:black;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+  
+}
+iframe{
+  float:right;
+}
+video{
+float:left;
+}
+/*section*/
+
+section{
+      background-color: #333;
+      color:#ddd;
+      text-align: left;
+    }
+
+    article{
+      width: 44%;
+      padding-right: 3%;
+      margin-left: 0%;
+      float: left;
+     background-color: rgb(255, 255, 255);
+     text-align: justify; 
+    }
+    aside{
+      width: 48%;
+      padding-right: 4%;
+      margin-left: 3%;
+      float: right;
+     background-color: white;
+     text-align: justify;
+    }
+    </style>
+    </head>
+    <body>
+
+    <!---navbar-->
+   <div class="navbar">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+          </head>
+          <body>
+          
+          <div class="navbar">
+            <a href="home.html">Home</a>
+             <div class="dropdown">
+              <button class="dropbtn">Pharmacy
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="Drugs.html">Drugs</a>
+                <a href="lab.html">Labolitary</a>
+               
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Patient 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="std.html">Statistics of death</a>
+                <a href="stp.html">Statistics of Discharged Patient</a>
+                <a href="stw.html">Statistics of Patients in the wards</a>
+                <a href="appointment form.html">Patients Appointment form</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Services offered
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="cancer.html">cancer treatment</a>
+                <a href="liver.html">Liver treatment</a>
+                <a href="brain.html">Brian treatment</a>
+                <a href="labor.html">labor</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Doctors 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="doc.php">Find Doctor</a>
+                <a href="Mfs.html">Members of staff</a>
+                <a href="chatroom.html">chatroom</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">About us 
+                <i class="fa fa-fw fa-envelope"></i>
+            
+              </button>
+              <div class="dropdown-content">
+                <a href="Location.php">Location</a>
+               
+              </div>
+            </div>
+            <a href="logins.html"><i class="fa fa-fw fa-user"></i> Login</a>
+          </div>
+        </div>
+        <br>
+<!--end of nav-->
+  <marquee>  <center><h1 STYLE="font-size: 100%;" >WELCOME TO CHONGWE DISTRICT HOSPITAL WEBSITE </h1></center>
+<!-- Add icon library -->
+</marquee> 
+<hr>
+
+<div class="card">
+  <img src="img/download.jpg" alt="John" style="width:100%; height:40%" >
+ 
+  
+  <p align="justify">
+
+    <h1 style="font-size:20px; text-align: center;" >Funded by the UK Department for International Development and the Millennium Development Goal Initiative,
+    </h1>
+    <p> Funded by the UK Department for International Development and the Millennium Development Goal Initiative,
+     the project was sponsored by the European Union (EU) and funds were managed by UNICEF Zambia. 
+     The aim of this project was to understand and evaluate the impact of a well-equipped Biomedical
+      Engineering Technologist (BMET) on the status of medical equipment within each health facility.</p>
+      <hr>
+<article><p>Established in 2011, Chongwe District Hospital is a first level hospital located 45km east of Lusaka.
+ With a 100-bed capacity, the hospital serves a population of more than 182,000. 
+ Patients are referred here from 34 surrounding health centers and can access a range of services, 
+ including paediatrics, surgical care and dental care. Due to health service demands across the district,
+when the hospital was initially upgraded from a primary health facility , it was provided with equipment
+acquired from other health facilities, some of which was old and needed frequent servicing and repair.
+    The lack of user training among health workers led to equipment breaking down and unfortunately, 
+    the hospital did not have a BMET on-site to conduct preventative or corrective maintenance. 
+    This meant that medical equipment had to be repaired by provincial level staff which often led to significant 
+    delays for vital repairs.</p></article>
+<b>
+  <p>At the start of THET’s medical equipment up-time pilot project, the hospital had approximately 120 pieces 
+of medical equipment with an equipment uptime of 73% (100% uptime equates to all medical equipment in a
+ particular facility being functional). Following THET’s introduction of a BMET, Anderson Phiri, a biomedical
+  workshop was set up at the hospital where broken-down equipment could be repaired without being sent to the 
+  Provincial Health Office, which is much quicker and more cost effective. Through the workshop and Anderson’s 
+  full-time placement in the hospital,the medical equipment status rose significantly, reaching 96% in the tenth, and final, month of the project.
+</p></b>
+ <p> Major improvements were made in specific departments, such as a 60% increase in physiotherapy equipment up-time,
+  meaning health workers could provide vital services for patients recovering from surgery or injury to enable them 
+  to get back on their feet, and a 51% increase in up-time in the X-ray department, allowing health 
+  workers to diagnose life threatening injuries and conditions. With staff able to access the equipment 
+  they needed to treat patients, quality health care services could be provided across the hospital 
+</p>
+<hr>
+  <div class="card" >
+      <img src="img/download (4).jpg" alt="John" style="width:120%; height:40%" 
+      >
+         <p class="title"></p>
+         <p><button  style="width:100%"><h2>Chongwe District Hospital: Model of quality service</h2>WE DO PROVIDE ALL MEDICAL SERVICES WITH QUALITY</button></p>
+       
+       </div>
+  <article style="width:60%">
+       <p> He said an average of 100 deliveries are conducted per month in the maternity department.
+    Dr Mwanza, however, expressed concern on delays by authorities to deliver medical equipment and furniture for the district hospital.
+    Senior Chieftainess Nkomeshya Mukamambo thanked Government for constructing the hospital as it has reduced on the number of referrals to Lusaka.
+    In a speech read for her by senior headman Kapuka, the traditional leader said the constructing of the hospital within Chongwe has addressed many challenges, which her people mostly from rural communities were facing such as transportation.
+    Meanwhile, Dr Msiska said the separation of Chongwe and Rufunsa districts has enabled them to record success in the service delivery.
+    â€œSince Chongwe has been separated from Rufunsa, we have seen the benefits in service delivery. In the past, we used to receive a grant of between K140,000 to K150,000 for both Chongwe and Rufunsa.
+    But after the separation, Chongwe receives K190,000 and Rufunsa receives K180,000. With regards to transportation, Chongwe received three ambulances and Rufunsa got two,â€ Dr Msiska said.
+  </p></article>
+  </div>
+</div>
+</div>
+   
+ <script>$('#myCarousel').on('fade.bs.carousel', function () {
+  // do something…
+  })</script>
+<!--card1-->
+  <div class="card">
+    <img src="img/download (1).jpg" alt="John" style="width:33%; height:40%" >
+    <img src="img/download (3).jpg" alt="John" style="width:33%; height:40%" >
+    <img src="img/download (2).jpg" alt="John" style="width:33%; height:40%" >
+    <p class="title"></p>
+    <p><h1  > code</h1></p>
+    <!--text-->
+    <p>Lusaka Province Minister Charles Shawa says he happy that the long awaited construction of the Chongwe District Hospital has finally been completed.
+
+      Speaking when he toured the biggest health facility in the District today, Mr. Shawa said he was particularly pleased that the completed construction of the hospital was in line with government’s policy of providing health services as closer to the people as possible.
+      
+      The Provincial Minister noted that the construction of the Health Centre in the district will ease the burden of people going to far flung areas to access health care.
+      
+      The modern hospital has constructed at a total cost of about 7 billion kwacha by government.
+      
+      He said the completion of the district hospital demonstrates government’s commitment in providing quality
+       health care to its people in both urban and rural Zambia.
+      
+      Mr. Shawa also stated that the construction of the District Hospital is in the right framework in the 
+      attainment of the Millennium Development Goals (MDG’s).
+      
+      And District Medical Health Officer Dr. Lucky Msiska said the District hospital is a big achievement 
+      and pride for the Chongwe District.
+    </p>
+
+    </div>
+  
+    <p>In 2019, Anderson returned to the hospital to undertake research on the status of the medical equipment
+     one year after his ten-month THET funded placement at Chongwe. Disappointingly, overall equipment up-time
+      had returned to the level it had been when he started his placement (73%), with significant losses in specific
+       wards, for example, down 30% in the operating theatre. Broken-down equipment in need of repair was found across
+        the wards and in the storeroom. The limited remaining equipment, such as suction machines and oxygen 
+        concentrators, was shared amongst the departments dependent on need, a practice which is clinically unsafe 
+        and puts patients at risk as it increases the risk of spreading infections from department to department and 
+        means that life-saving equipment is often not available for patients when they need it most.</p>
+     
+    <article><p>From the data Anderson collected, he found that 35% of the hospital’s equipment required regular preventative
+     or corrective maintenance to run efficiently. Without a BMET on-site to repair the equipment, this has significant 
+     consequences for the hospital’s staff and patients, both financially and in terms of quality of care. 
+     For patients, service provision is badly affected, and, in many cases, patients must be referred to 
+     another health facility for care which can be costly for both the hospital and individual. 
+     It can also lead to delays in accessing life-saving treatment, such as women having to wait to be transferred 
+     for an emergency caesarean section which puts them, and their child’s lives at risk. For staff, malfunctioning
+      equipment prevents them from being able to do their jobs effectively, which can be both demotivating and hazardous.
+       If, for example, a malfunctioning oxygen concentrator continues to be used, it becomes very difficult to ensure 
+       that a patient is getting enough oxygen.  For the hospital, hiring an external BMET incurs a relatively high cost 
+       and waiting for an engineer to arrive from the Provincial Health Office can take a number of weeks, limiting the 
+       hospital’s ability to provide quality care and meet patient needs.</p></article>
+    
+    <p>This project has made clear just how vital BMETs are to a well-functioning hospital. The presence of a well-trained,
+     well-equipped BMET can significantly improve the status of medical equipment, but this progress is only sustainable
+      with continued on-site servicing and repair. When no BMET is present, the equipment status can revert to the 
+      original baseline in as little as one year and patient care will inevitably suffer.</p>
+  
+      <article><div class="card">
+    <img src="img/images (8).jpg" style="width:120%; height:40%"  alt="John" style="width:100%; height:40%" > 
+    <p class="title">
+   
+  </div>
+</article>
+<br>
+<br> <br>
+<br> <br>
+<br> <br>
+<br> <br> <br>
+<br> <br>
+<br> <br>
+<br>
+<br>
+  
+   <!-- Full-width images with number text -->
+   <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="img/CHONGWE-HOSPITAL-KABANSHI-MATERNAL.jpg" style="width:100%;height:70%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="img/d6.jpg" style="width:100%;height:70%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="img/download (3).jpg" style="width:100%;height:70%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="img/images (1).png" style="width:100%;height:70%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="img/e.jpg" style="width:100%;height:70%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img/images (13).jpg" style="width:100%;height:70%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/CHONGWE-HOSPITAL-KABANSHI-MATERNAL.jpg" style="width:100%;height:20%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/d6.jpg" style="width:100%;height:20%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/download (3).jpg" style="width:100%;height:20%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/images (1).png" style="width:100%;height:20%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/e.jpg" style="width:100%;height:20%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/images (13).jpg" style="width:100%;height:20%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+<style>
+    * {
+box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+</style>
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br>
+   <footer style="background-color: rgb(146, 154, 228);"> <table width="99%" >
+      
+      <tr>
+          <th>MEANT FOR</th>
+          <th>SERVICES</th>
+     </tr>
+
+      <tr>   
+          <td align="center">Doctors </td>
+          <td align="center">Blood Services</td>    
+      </tr>
+
+      <tr>  
+          <td align="center">Surgeons</td>
+          <td align="center">Laboratory Services</td>    
+      </tr>
+
+      <tr>   
+          <td align="center">Dentists</td>
+          <td align="center">Brain Scan and Operations</td>
+ </tr>
+
+      <tr>
+  
+          <td align="center">Information Seekers</td>
+          <td align="center">Cancer and Liver Treatment</td>
+          
+      </tr>
+      <tr>
+          
+        
+        <td align="center">Patients</td>
+        <td  align="center">Labor</td>
+        
+        
+    </tr>
+  </table>
+</footer>
+<footer>
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="top" bgcolor="#333">
+    
+      Address	:PO Box 420059, Mbala. All rights reserved.<br>
+    <a href = "benluomacheng@gmail.com">E-mail Us Today!</a> | <a href = "logindoc.php">Your Privacy</a><br>
+    </tr>
+    </table>
+  </footer>                                                                         
+</body>
+
+</div>
+</html>
